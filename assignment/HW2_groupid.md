@@ -8,7 +8,7 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 gender <- factor(cats$Sex,labels=c("female","male"))
 summary(gender)
 ```
-    Descriptive statistics Statement
+   Descriptive statistics Statement
 ```{R}
 Code here
 ```
