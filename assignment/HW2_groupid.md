@@ -3,9 +3,10 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Answer
 
-1.) From survey, most students use left hand writing.
+1.) From cats, there are 47 female cats and 97 male cats.
 ```{R}
-Code here
+gender <- factor(cats$Sex,labels=c("female","male"))
+summary(gender)
 ```
 
 2.) Descriptive statistics Statement
@@ -14,7 +15,7 @@ Code here
 ```
 
 
-### Team: xxxxxxx
+### Team: ไอรดา
 
 1.StudentID: 63130500004 กัณฑ์พงษ์ ศรีสุธาภัทร์ <br/>
 2.StudentID: 63130500006 กิตติภูมิ อ่วมทอน <br/>
