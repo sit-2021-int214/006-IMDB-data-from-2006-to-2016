@@ -14,6 +14,17 @@ summary(gender)
 จากนั้นแสดงผลผลลัพธ์ "summary(gender)"
 ```
 
+2.) From cats, max and min body weight is 20.5, 2 respectively.
+```{R}
+max(cats$Hwt)
+min(cats$Bwt)
+```
+   Descriptive statistics Statement
+```{R}
+หาค่า max body weight "max(cats$Hwt)"
+หาค่า min body weight "min(cats$Bwt)"
+```
+
 
 ### Team: ไอรดา
 
