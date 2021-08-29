@@ -29,6 +29,16 @@ min() = หาค่า min
 cats$Bwt = cat body weight
 ```
 
+3.) From survey, number of student who applaud with "Right", "Left", "Neither" hand on top is 39, 50, 147.
+```{R}
+summary(survey$Clap)
+```
+   Descriptive statistics Statement
+```{R}
+survey$Clap จำแนกความถนัดการปรบมือ
+หาผลลัพธ์ความถนัดการปรบมือตามประเภท "summary(survey$Clap)" 
+```
+
 
 ### Team: ไอรดา
 
