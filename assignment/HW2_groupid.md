@@ -29,7 +29,7 @@ min() = หาค่า min
 cats$Bwt = cat body weight
 ```
 
-3.) From survey, number of student who applaud with "Right", "Left", "Neither" hand on top is 39, 50, 147.
+3.) From survey, number of student who applaud with "Right", "Left", "Neither" hand on top is 39, 50, 147 respectively.
 ```{R}
 summary(survey$Clap)
 ```
@@ -37,6 +37,32 @@ summary(survey$Clap)
 ```{R}
 survey$Clap จำแนกความถนัดการปรบมือ
 หาผลลัพธ์ความถนัดการปรบมือตามประเภท "summary(survey$Clap)" 
+```
+
+4.) From survey, tallest male and female students is 200, 180.34 respectively.
+```{R}
+max(survey$Height[survey$Sex == 'Female'], na.rm = TRUE)
+max(survey$Height[survey$Sex == 'Male'], na.rm = TRUE)
+```
+   Descriptive statistics Statement
+```{R}
+จำแนกเพศนักเรียน "survey$Sex == 'Female'", "survey$Sex == 'Male'"
+หาความสูง "survey$Height"
+หาค่ามากสุด "max()"
+ไม่นับค่า NA "na.rm = TRUE"
+```
+
+5.) From survey, tallest male and female students is 200, 180.34 respectively.
+```{R}
+max(survey$Height[survey$Sex == 'Female'], na.rm = TRUE)
+max(survey$Height[survey$Sex == 'Male'], na.rm = TRUE)
+```
+   Descriptive statistics Statement
+```{R}
+จำแนกเพศนักเรียน "survey$Sex == 'Female'", "survey$Sex == 'Male'"
+หาความสูง "survey$Height"
+หาค่ามากสุด "max()"
+ไม่นับค่า NA "na.rm = TRUE"
 ```
 
 
