@@ -10,7 +10,7 @@ summary(gender)
 ```
    Descriptive statistics Statement
 ```{R}
-จำแนกเพศแมวและเก็บไว้ใน gender และตั้งชื่อหัวข้อ column "labels=c("female","male")"
+จำแนกเพศแมว "cats$Sex" และเก็บไว้ใน gender และตั้งชื่อ column เป็น male และ female "labels=c("female","male")"
 จากนั้นแสดงผลผลลัพธ์ "summary(gender)"
 ```
 
@@ -23,6 +23,10 @@ min(cats$Bwt)
 ```{R}
 หาค่า max body weight "max(cats$Bwt)"
 หาค่า min body weight "min(cats$Bwt)"
+
+max() = หาค่า max
+min() = หาค่า min
+cats$Bwt = cat body weight
 ```
 
 
