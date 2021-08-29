@@ -52,17 +52,14 @@ max(survey$Height[survey$Sex == 'Male'], na.rm = TRUE)
 ไม่นับค่า NA "na.rm = TRUE"
 ```
 
-5.) From survey, tallest male and female students is 200, 180.34 respectively.
+5.) From survey, There were 189 students who never smoked.
 ```{R}
-max(survey$Height[survey$Sex == 'Female'], na.rm = TRUE)
-max(survey$Height[survey$Sex == 'Male'], na.rm = TRUE)
+table(survey$Smoke == 'Never')
 ```
    Descriptive statistics Statement
 ```{R}
-จำแนกเพศนักเรียน "survey$Sex == 'Female'", "survey$Sex == 'Male'"
-หาความสูง "survey$Height"
-หาค่ามากสุด "max()"
-ไม่นับค่า NA "na.rm = TRUE"
+เลือกนักเรียนที่ไม่เคยสูบบุหรี่ "survey$Smoke == 'Never'"
+หาผลลัพธ์ "table()"
 ```
 
 
