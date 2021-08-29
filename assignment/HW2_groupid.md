@@ -10,7 +10,8 @@ summary(gender)
 ```
    Descriptive statistics Statement
 ```{R}
-จำแนกเพศแมว "cats$Sex" และเก็บไว้ใน gender และตั้งชื่อ column เป็น male และ female "labels=c("female","male")"
+จำแนกเพศแมว "cats$Sex" และเก็บไว้ใน gender
+ตั้งชื่อ column เป็น male และ female "labels=c("female","male")"
 จากนั้นแสดงผลผลลัพธ์ "summary(gender)"
 ```
 
