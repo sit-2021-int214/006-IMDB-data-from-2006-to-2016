@@ -1,4 +1,4 @@
-# 006-Top-Spotify-songs-from-2010-2019
+# 006-IMDB data from 2006 to 2016
 Datasets from: https://www.kaggle.com/PromptCloudHQ/imdb-data
 
 ## Objective
