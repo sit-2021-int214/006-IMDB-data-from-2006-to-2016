@@ -6,6 +6,7 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Define a question
 
+1.หนังเรื่องไหนมีผลโหวตมากที่สุด
 
 
 ### Loading library and dataset
