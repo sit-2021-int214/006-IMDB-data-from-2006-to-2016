@@ -7,16 +7,15 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 ### Define a question
 
 1.หนังเรื่องไหนมีผลโหวตมากที่สุด
+2.มีหนังกี่เรื่องที่มี rating มากกว่า 8.0 และมีเรื่องอะไรบ้าง
+3.หนังที่ rating สูงที่สุดในแต่ละปีมีเรื่องอะไรบ้าง (แสดงผลลัพธ์แยกเป็นปี 2006-2016)
+4.
 
 
 ### Loading library and dataset
 ```{R}
 # Step 1: Load library
 library(dplyr)
-library(stringr)
-library(tidyr)
-library(assertive)
-library(readr)
 
 # Step 2: Load dataset
 survey <- read.csv("https://github.com/sit-2021-int214/006-IMDB-data-from-2006-to-2016/blob/main/IMDB-Movie-Data.csv")
