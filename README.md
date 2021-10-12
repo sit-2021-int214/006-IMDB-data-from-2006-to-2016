@@ -1,11 +1,45 @@
 # 006-IMDB data from 2006 to 2016
-Datasets from: https://www.kaggle.com/PromptCloudHQ/imdb-data
+Original Datasets from: [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 
-## Objective
+### About's Products Datasets
 
-## Process
+This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. The data points included are: Title, Genre, Description, Director, Actors, Year, Runtime, Rating, Votes, Revenue, Metascrore
 
-## Result
+## Overview
+
+// Write Statement here
+E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
+
+### Steps
+
+1. Define a question
+2. Observe...
+
+### Tools
+
+- R Language
+- R Studio Desktop
+
+## Table of Contents
+
+1. [Exploratory Data Analysis](./01_explore.md)
+2. [Data Visualization]()
+
+## Resources
+
+### Important Files in Repository
+
+- [code_eda.R](./code_eda.R) : Exploratory Data Analysis
+- [products_original.csv](./products_original.csv): Original Dataset
+- [products_clean.csv](./products_original.csv): Clean Dataset
+
+### References
+
+// Link
+
+## About Us
+
+งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
