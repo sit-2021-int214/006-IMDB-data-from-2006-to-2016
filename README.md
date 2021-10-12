@@ -13,12 +13,12 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 ### Steps
 
-1.Define a question <br/>
-2.Search datasets from Kaggle <br/>
-3.Retrieve the relevant dataset from Kaggle <br/>
-4.Explore the dataset from the original dataset <br/>
-5.Data Cleaning and Data Transformation <br/>
-6.Exploratory Data Analysis <br/>
+1. Define a question <br/>
+2. Search datasets from Kaggle <br/>
+3. Retrieve the relevant dataset from Kaggle <br/>
+4. Explore the dataset from the original dataset <br/>
+5. Data Cleaning and Data Transformation <br/>
+6. Exploratory Data Analysis <br/>
 
 ### Tools
 
