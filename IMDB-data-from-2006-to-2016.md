@@ -8,7 +8,7 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 
 
-### Step 0 Loading library and dataset
+### Loading library and dataset
 ```{R}
 # Step 1: Load library
 library(dplyr)
