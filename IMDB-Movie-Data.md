@@ -22,7 +22,7 @@ library(dplyr)
 survey <- read.csv("https://github.com/sit-2021-int214/006-IMDB-data-from-2006-to-2016/blob/main/IMDB-Movie-Data.csv")
 ```
 
-#1) หนังเรื่องไหนมีผลโหวตมากที่สุด
+# 1) หนังเรื่องไหนมีผลโหวตมากที่สุด
 ```{R}
 
 ```
