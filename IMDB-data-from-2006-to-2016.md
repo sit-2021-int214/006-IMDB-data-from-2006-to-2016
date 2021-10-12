@@ -6,10 +6,21 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Define a question
 
-1.) From cats, there are 47 female cats and 97 male cats.
-```{R}
 
+
+### Step 0 Loading library and dataset
+```{R}
+# Step 1: Load library
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(assertive)
+library(readr)
+
+# Step 2: Load dataset
+survey <- read.csv("https://github.com/sit-2021-int214/006-IMDB-data-from-2006-to-2016/blob/main/IMDB-Movie-Data.csv")
 ```
+
 
 
 ### Team: ไอรดา
