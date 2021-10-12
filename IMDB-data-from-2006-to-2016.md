@@ -1,6 +1,6 @@
 # IMDB-data-from-2006-to-2016 Dataset
 
-Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
+Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 
 Explore 2 dataset that given then finding descriptive statistics and summary result in form of sentences/paragraph at least 5 topics.
 
