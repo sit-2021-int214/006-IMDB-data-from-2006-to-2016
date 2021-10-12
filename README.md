@@ -8,8 +8,7 @@ This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. 
 
 ## Overview
 
-// Write Statement here
-E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
+กลุ่มของเราเลือกชุดข้อมูลนี้เพราะอยากรู้ว่าหนังที่ได้รับความนิยมใน IMDB ของช่วงปี 2006-2016 มีเรื่องอะไรบ้าง มี rating เป็นยังไง และนักแสดงกับผู้กำกับคือใคร
 
 ### Steps
 
