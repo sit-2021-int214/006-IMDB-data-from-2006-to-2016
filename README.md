@@ -40,7 +40,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 ### References
 
-// Linkhttps://www.kaggle.com/PromptCloudHQ/imdb-data/version/1
+https://www.kaggle.com/PromptCloudHQ/imdb-data/version/1
 
 ## About Us
 
