@@ -1,4 +1,5 @@
 # 006-IMDB data from 2006 to 2016
+
 Original Datasets from: [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 
 ### About's Products Datasets
@@ -12,8 +13,12 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 ### Steps
 
-1. Define a question
-2. Observe...
+1.Define a question
+2.Search datasets from Kaggle
+3.Retrieve the relevant dataset from Kaggle
+4.Explore the dataset from the original dataset
+5.Data Cleaning and Data Transformation
+6.Exploratory Data Analysis
 
 ### Tools
 
@@ -35,7 +40,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 ### References
 
-// Link
+// Linkhttps://www.kaggle.com/PromptCloudHQ/imdb-data/version/1
 
 ## About Us
 
