@@ -175,11 +175,22 @@ result:
 
 3) หนังที่ rating สูงที่สุดในแต่ละปีมีเรื่องอะไรบ้าง (แสดงผลลัพธ์แยกเป็นปี 2006-2016)
 ```{R}
-
+aggregate(Title ~ Year , data = imdb, max)
 ```
 result:
 ```{R}
-
+   Year              Title
+1  2006     X-Men: The Last Stand
+2  2007     Zodiac
+3  2008     Zack and Miri Make a Porno
+4  2009     Zombieland
+5  2010     Winter's Bone
+6  2011     Your Highness
+7  2012     Zero Dark Thirty
+8  2013     World War Z
+9  2014     X-Men: Days of Future Past
+10 2015     Zipper
+11 2016     Zootopia
 ```
 
 4) ให้แสดงจำนวนหนังของผู้กำกับแต่ละคนว่ามีจำนวนเท่าไหร่
