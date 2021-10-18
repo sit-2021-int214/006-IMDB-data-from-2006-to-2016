@@ -107,6 +107,10 @@ print(Rating)
 ```
 result:
 ```{R}
+#มี 59 เรื่อง
+   n
+1 59
+#รายชื่อหนังและ rating
    Title                                          Rating
 1  Guardians of the Galaxy                         8.1
 2  La La Land                                      8.3
