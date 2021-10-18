@@ -25,8 +25,8 @@ Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 1. หนังเรื่องไหนมีผลโหวตมากที่สุดและน้อยที่สุด <br/>
 2. มีหนังกี่เรื่องที่มี rating มากกว่า 8.0 และมีเรื่องอะไรบ้าง <br/>
 3. หนังที่ rating สูงที่สุดในแต่ละปีมีเรื่องอะไรบ้าง (แสดงผลลัพธ์แยกเป็นปี 2006-2016) <br/>
-4. ให้แสดงจำนวนหนังของผู้กำกับแต่ละคนว่ามีจำนวนเท่าไหร่ <br/>
-5. มีหนังเรื่องอะไรบ้างที่มีความยาวมากกว่า 2 ชั่วโมงครึ่ง
+4. ให้แสดงหนังของผู้กำกับ Christopher Nolan มีเรื่องอะไรบ้าง <br/>
+5. มีหนังเรื่องอะไรบ้างที่มีความยาวมากกว่าหรือเท่ากับ 3 ชั่วโมง ให้แสดง title, genre และ runtime <br/>
 6. มีหนังในปี 2014-2016 กี่เรื่อง
 
 ## 2. Load dataset
@@ -66,9 +66,11 @@ $ Metascore          <int> 76, 65, 62, 59, 40, 42, 93, 71, 78, 41, 66, 74, 65, 8
 ## 4. Cleaning Dataset
 ```{R}
 # Change revenue from not applicable to unidentified
-imdb$Revenue..Millions. <- imdb$Revenue..Millions.%>%replace(is.na(imdb$Revenue..Millions.),"unidentified")
+imdb$Revenue..Millions. <- imdb$Revenue..Millions. %>%
+  replace(is.na(imdb$Revenue..Millions.),"unidentified")
 # Change revenue from not applicable to no score
-imdb$Metascore <- imdb$Metascore%>%replace(is.na(imdb$Metascore),"no score")
+imdb$Metascore <- imdb$Metascore %>%
+  replace(is.na(imdb$Metascore),"no score")
 ```
 
 ## 5. Exploratory Data Analysis
@@ -103,15 +105,15 @@ result:
 Rating <- imdb %>%
   select(Title,Rating) %>%
   filter(imdb$Rating>8)
-Rating %>% count()
+  Rating %>% 
+  count()
 print(Rating)
 ```
-result:
+result: [59]
 ```{R}
-#มี 59 เรื่อง
    n
 1 59
-#รายชื่อหนังและ rating
+
    Title                                          Rating               Title                                          Rating
 1  Guardians of the Galaxy                         8.1              31 Twin Peaks: The Missing Pieces                  8.1
 2  La La Land                                      8.3              32 Spotlight                                       8.1
@@ -166,13 +168,22 @@ result:
 11 2016     Zootopia
 ```
 
-4) ให้แสดงจำนวนหนังของผู้กำกับแต่ละคนว่ามีจำนวนเท่าไหร่
+4) ให้แสดงหนังของผู้กำกับ Christopher Nolan มีเรื่องอะไรบ้าง
 ```{R}
-
+imdb %>% 
+  select(Title, Director) %>% 
+  filter(imdb$Director == 'Christopher Nolan') %>% 
+  table()
 ```
 result:
 ```{R}
-
+                                Director
+  Title                     Christopher Nolan
+  Inception                         1
+  Interstellar                      1
+  The Dark Knight                   1
+  The Dark Knight Rises             1
+  The Prestige                      1
 ```
 
 5) มีหนังเรื่องอะไรบ้างที่มีความยาวมากกว่าหรือเท่ากับ 3 ชั่วโมง ให้แสดง title, genre และ runtime
@@ -194,13 +205,15 @@ result:
 
 6) มีหนังในปี 2014-2016 กี่เรื่อง
 ```{R}
-movie <- imdb%>%select(Year)%>%filter(imdb$Year >= 2014 & imdb$Year <= 2016)%>%count()
+movie <- imdb %>%
+  select(Year) %>%
+  filter(imdb$Year >= 2014 & imdb$Year <= 2016) %>%
+  count()
 print(movie)
 ```
 
-result:
+result: [522]
 ```{R}
-#มี 522 เรื่อง
     n
 1 522
 ```
