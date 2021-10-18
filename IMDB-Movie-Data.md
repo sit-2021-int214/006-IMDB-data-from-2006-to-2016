@@ -15,11 +15,10 @@ Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 ### Steps
 
 1. Define a question <br/>
-2. Search datasets from Kaggle <br/>
-3. Retrieve the relevant dataset from Kaggle <br/>
-4. Explore the dataset from the original dataset <br/>
-5. Data Cleaning and Data Transformation <br/>
-6. Exploratory Data Analysis <br/>
+2. Load datasets <br/>
+3. Explore the dataset <br/>
+4. Data Cleaning and Data Transformation <br/>
+5. Exploratory Data Analysis <br/>
 
 ### Define a question
 
