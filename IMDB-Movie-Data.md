@@ -41,7 +41,6 @@ library(readr)
 ```{R}
 # Step 2: Load dataset
 imdb <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/006-IMDB-data-from-2006-to-2016/main/IMDB-Movie-Data.csv")
-
 ```
 ### Explore the dataset
 ```{R}
