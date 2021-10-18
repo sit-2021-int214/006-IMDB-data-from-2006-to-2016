@@ -10,15 +10,6 @@ This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. 
 
 กลุ่มของเราเลือกชุดข้อมูลนี้เพราะอยากรู้ว่าหนังที่ได้รับความนิยมใน IMDB ของช่วงปี 2006-2016 มีเรื่องอะไรบ้าง rating ของหนังแต่ละเรื่องเป็นยังไง ความยาวของหนังแต่ละเรื่องอยู่ที่เท่าไหร่ มีหนังประเภทอะไรบ้าง และนักแสดงกับผู้กำกับคือใคร
 
-### Steps
-
-1. Define a question <br/>
-2. Search datasets from Kaggle <br/>
-3. Retrieve the relevant dataset from Kaggle <br/>
-4. Explore the dataset from the original dataset <br/>
-5. Data Cleaning and Data Transformation <br/>
-6. Exploratory Data Analysis <br/>
-
 ### Tools
 
 - R Language
