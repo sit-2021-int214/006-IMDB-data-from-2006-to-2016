@@ -26,7 +26,7 @@ Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 2. มีหนังกี่เรื่องที่มี rating มากกว่า 8.0 และมีเรื่องอะไรบ้าง <br/>
 3. หนังที่ rating สูงที่สุดในแต่ละปีมีเรื่องอะไรบ้าง (แสดงผลลัพธ์แยกเป็นปี 2006-2016) <br/>
 4. ให้แสดงจำนวนหนังของผู้กำกับแต่ละคนว่ามีจำนวนเท่าไหร่ <br/>
-5. หนังที่มีความยาวมากกว่า 2 ชั่วโมงครึ่ง
+5. มีหนังเรื่องอะไรบ้างที่มีความยาวมากกว่า 2 ชั่วโมงครึ่ง
 
 ## 2. Load dataset
 ```{R}
@@ -64,8 +64,10 @@ $ Metascore          <int> 76, 65, 62, 59, 40, 42, 93, 71, 78, 41, 66, 74, 65, 8
 
 ## 4. Cleaning Dataset
 ```{R}
+# Change revenue from not applicable to unidentified
 imdb$Revenue..Millions. <- imdb$Revenue..Millions.%>%replace(is.na(imdb$Revenue..Millions.),"unidentified")
-imdb$Metascore <- imdb$Metascore%>%replace(is.na(imdb$Metascore),"on score")
+# Change revenue from not applicable to no score
+imdb$Metascore <- imdb$Metascore%>%replace(is.na(imdb$Metascore),"no score")
 ```
 
 ## 5. Exploratory Data Analysis
@@ -74,8 +76,16 @@ imdb$Metascore <- imdb$Metascore%>%replace(is.na(imdb$Metascore),"on score")
 ```{R}
 
 ```
+result:
+```{R}
+
+```
 
 2) มีหนังกี่เรื่องที่มี rating มากกว่า 8.0 และมีเรื่องอะไรบ้าง
+```{R}
+
+```
+result:
 ```{R}
 
 ```
@@ -84,15 +94,77 @@ imdb$Metascore <- imdb$Metascore%>%replace(is.na(imdb$Metascore),"on score")
 ```{R}
 
 ```
+result:
+```{R}
+
+```
 
 4) ให้แสดงจำนวนหนังของผู้กำกับแต่ละคนว่ามีจำนวนเท่าไหร่
 ```{R}
 
 ```
-
-5) หนังที่มีความยาวมากกว่า 2 ชั่วโมงครึ่ง
+result:
 ```{R}
 
+```
+
+5) มีหนังเรื่องอะไรบ้างที่มีความยาวมากกว่า 2 ชั่วโมงครึ่ง
+```{R}
+imdb %>% 
+  select(Title,Genre,Runtime..Minutes.) %>% 
+  filter(Runtime..Minutes. > 150) %>% 
+  arrange(Title,Genre,Runtime..Minutes.)
+```
+result:
+```{R}
+                                                        Title                    Genre Runtime..Minutes.
+1                                                        2012  Action,Adventure,Sci-Fi               158
+2                                                    3 Idiots             Comedy,Drama               170
+3                                           American Gangster    Biography,Crime,Drama               157
+4                                              American Honey                    Drama               163
+5                                                   Australia  Adventure,Drama,Romance               165
+6                                                      Avatar Action,Adventure,Fantasy               162
+7                                     Bahubali: The Beginning   Action,Adventure,Drama               159
+8                          Batman v Superman: Dawn of Justice  Action,Adventure,Sci-Fi               151
+9                                                     Boyhood                    Drama               165
+10                                                Cloud Atlas             Drama,Sci-Fi               172
+11                                                     Dangal   Action,Biography,Drama               161
+12                                               Dear Zindagi            Drama,Romance               151
+13                                           Django Unchained            Drama,Western               165
+14                                                    Goksung     Drama,Fantasy,Horror               156
+15                                                 Grindhouse   Action,Horror,Thriller               191
+16                     Harry Potter and the Half-Blood Prince Adventure,Family,Fantasy               153
+17                                       Inglourious Basterds      Adventure,Drama,War               153
+18                                              Inland Empire   Drama,Mystery,Thriller               180
+19                                               Interstellar   Adventure,Drama,Sci-Fi               169
+20                                            La vie d'Adรจle            Drama,Romance               180
+21                                            Les Misรฉrables    Drama,Musical,Romance               158
+22                                     Mรคn som hatar kvinnor   Drama,Mystery,Thriller               152
+23                   Pirates of the Caribbean: At World's End Action,Adventure,Fantasy               169
+24                 Pirates of the Caribbean: Dead Man's Chest Action,Adventure,Fantasy               151
+25                                                         PK     Comedy,Drama,Romance               153
+26                                                  Prisoners      Crime,Drama,Mystery               153
+27                                                    Silence  Adventure,Drama,History               161
+28                                           Superman Returns  Action,Adventure,Sci-Fi               154
+29                                           Taare Zameen Par       Drama,Family,Music               165
+30 The Assassination of Jesse James by the Coward Robert Ford    Biography,Crime,Drama               160
+31                        The Curious Case of Benjamin Button    Drama,Fantasy,Romance               166
+32                                            The Dark Knight       Action,Crime,Drama               152
+33                                      The Dark Knight Rises          Action,Thriller               164
+34                                               The Departed     Crime,Drama,Thriller               151
+35                            The Girl with the Dragon Tattoo      Crime,Drama,Mystery               158
+36                                          The Hateful Eight      Crime,Drama,Mystery               187
+37                          The Hobbit: An Unexpected Journey        Adventure,Fantasy               169
+38                        The Hobbit: The Desolation of Smaug        Adventure,Fantasy               161
+39                                               The Revenant Adventure,Drama,Thriller               156
+40                                    The Wolf of Wall Street   Biography,Comedy,Crime               180
+41                                        There Will Be Blood            Drama,History               158
+42                                               Toni Erdmann             Comedy,Drama               162
+43                            Transformers: Age of Extinction  Action,Adventure,Sci-Fi               165
+44                             Transformers: Dark of the Moon  Action,Adventure,Sci-Fi               154
+45                                                   Watchmen     Action,Drama,Mystery               162
+46                                           Zero Dark Thirty   Drama,History,Thriller               157
+47                                                     Zodiac      Crime,Drama,History               157
 ```
 
 ## About Us
