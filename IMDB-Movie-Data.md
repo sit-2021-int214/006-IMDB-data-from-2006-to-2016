@@ -27,6 +27,7 @@ Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 3. หนังที่ rating สูงที่สุดในแต่ละปีมีเรื่องอะไรบ้าง (แสดงผลลัพธ์แยกเป็นปี 2006-2016) <br/>
 4. ให้แสดงจำนวนหนังของผู้กำกับแต่ละคนว่ามีจำนวนเท่าไหร่ <br/>
 5. มีหนังเรื่องอะไรบ้างที่มีความยาวมากกว่า 2 ชั่วโมงครึ่ง
+6. มีหนังในปี 2014-2016 กี่เรื่อง
 
 ## 2. Load dataset
 ```{R}
@@ -111,66 +112,38 @@ result:
    n
 1 59
 #รายชื่อหนังและ rating
-   Title                                          Rating
-1  Guardians of the Galaxy                         8.1
-2  La La Land                                      8.3
-3  Hacksaw Ridge                                   8.2
-4  Lion                                            8.1
-5  Bahubali: The Beginning                         8.3
-6  Interstellar                                    8.6
-7  Star Wars: Episode VII - The Force Awakens      8.1
-8  The Dark Knight                                 9.0
-9  The Prestige                                    8.5
-10 Mad Max: Fury Road                              8.1
-11 Zootopia                                        8.1
-12 The Avengers                                    8.1
-13 Inglourious Basterds                            8.3
-14 Inception                                       8.8
-15 The Wolf of Wall Street                         8.2
-16 Gone Girl                                       8.1
-17 Prisoners                                       8.1
-18 The Help                                        8.1
-19 Kimi no na wa                                   8.6
-20 The Departed                                    8.5
-21 12 Years a Slave                                8.1
-22 Harry Potter and the Deathly Hallows: Part 2    8.1
-23 Dangal                                          8.8
-24 The Dark Knight Rises                           8.5
-25 Whiplash                                        8.5
-26 No Country for Old Men                          8.1
-27 Shutter Island                                  8.1
-28 Room                                            8.2
-29 Django Unchained                                8.4
+   Title                                          Rating               Title                                          Rating
+1  Guardians of the Galaxy                         8.1              31 Twin Peaks: The Missing Pieces                  8.1
+2  La La Land                                      8.3              32 Spotlight                                       8.1
+3  Hacksaw Ridge                                   8.2              33 Warrior                                         8.2
+4  Lion                                            8.1              34 Into the Wild                                   8.1
+5  Bahubali: The Beginning                         8.3              35 The Imitation Game                              8.1
+6  Interstellar                                    8.6              36 Pan's Labyrinth                                 8.2
+7  Star Wars: Episode VII - The Force Awakens      8.1              37 The Grand Budapest Hotel                        8.1
+8  The Dark Knight                                 9.0              38 Inside Out                                      8.2
+9  The Prestige                                    8.5              39 The Intouchables                                8.6
+10 Mad Max: Fury Road                              8.1              40 There Will Be Blood                             8.1
+11 Zootopia                                        8.1              41 Rush                                            8.1
+12 The Avengers                                    8.1              42 The Bourne Ultimatum                            8.1
+13 Inglourious Basterds                            8.3              43 3 Idiots                                        8.4
+14 Inception                                       8.8              44 Jagten                                          8.3
+15 The Wolf of Wall Street                         8.2              45 The Lives of Others                             8.5
+16 Gone Girl                                       8.1              46 Paint It Black                                  8.3
+17 Prisoners                                       8.1              47 Up                                              8.3
+18 The Help                                        8.1              48 Mommy                                           8.1
+19 Kimi no na wa                                   8.6              49 WALLE                                           8.4
+20 The Departed                                    8.5              50 Relatos salvajes                                8.1
+21 12 Years a Slave                                8.1              51 Gran Torino                                     8.2
+22 Harry Potter and the Deathly Hallows: Part 2    8.1              52 Toy Story 3                                     8.3
+23 Dangal                                          8.8              53 Hachi: A Dog's Tale                             8.1
+24 The Dark Knight Rises                           8.5              54 Incendies                                       8.2
+25 Whiplash                                        8.5              55 El secreto de sus ojos                          8.2
+26 No Country for Old Men                          8.1              56 PK                                              8.2
+27 Shutter Island                                  8.1              57 How to Train Your Dragon                        8.1
+28 Room                                            8.2              58 Koe no katachi                                  8.4
+29 Django Unchained                                8.4              59 Taare Zameen Par                                8.5
 30 Ah-ga-ssi                                       8.1
-31 Twin Peaks: The Missing Pieces                  8.1
-32 Spotlight                                       8.1
-33 Warrior                                         8.2
-34 Into the Wild                                   8.1
-35 The Imitation Game                              8.1
-36 Pan's Labyrinth                                 8.2
-37 The Grand Budapest Hotel                        8.1
-38 Inside Out                                      8.2
-39 The Intouchables                                8.6
-40 There Will Be Blood                             8.1
-41 Rush                                            8.1
-42 The Bourne Ultimatum                            8.1
-43 3 Idiots                                        8.4
-44 Jagten                                          8.3
-45 The Lives of Others                             8.5
-46 Paint It Black                                  8.3
-47 Up                                              8.3
-48 Mommy                                           8.1
-49 WALLE                                           8.4
-50 Relatos salvajes                                8.1
-51 Gran Torino                                     8.2
-52 Toy Story 3                                     8.3
-53 Hachi: A Dog's Tale                             8.1
-54 Incendies                                       8.2
-55 El secreto de sus ojos                          8.2
-56 PK                                              8.2
-57 How to Train Your Dragon                        8.1
-58 Koe no katachi                                  8.4
-59 Taare Zameen Par                                8.5
+
 ```
 
 3) หนังที่ rating สูงที่สุดในแต่ละปีมีเรื่องอะไรบ้าง (แสดงผลลัพธ์แยกเป็นปี 2006-2016)
@@ -217,6 +190,19 @@ result:
 3 La vie d'adèle le        Drama,Romance                 180
 4 The Hateful Eight        Crime,Drama,Mystery           187
 5 The Wolf of Wall Street  Biography,Comedy,Crime        180
+```
+
+6) มีหนังในปี 2014-2016 กี่เรื่อง
+```{R}
+movie <- imdb%>%select(Year)%>%filter(imdb$Year >= 2014 & imdb$Year <= 2016)%>%count()
+print(movie)
+```
+
+result:
+```{R}
+#มี 522 เรื่อง
+    n
+1 522
 ```
 
 ## About Us
