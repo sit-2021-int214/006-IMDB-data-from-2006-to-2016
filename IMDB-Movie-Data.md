@@ -20,7 +20,7 @@ Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 4. Cleaning Dataset <br/>
 5. Exploratory Data Analysis
 
-### Define a question
+## 1. Define a question
 
 1. หนังเรื่องไหนมีผลโหวตมากที่สุดและน้อยที่สุด <br/>
 2. มีหนังกี่เรื่องที่มี rating มากกว่า 8.0 และมีเรื่องอะไรบ้าง <br/>
@@ -28,18 +28,17 @@ Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 4. ให้แสดงจำนวนหนังของผู้กำกับแต่ละคนว่ามีจำนวนเท่าไหร่ <br/>
 5. หนังที่มีความยาวมากกว่า 2 ชั่วโมงครึ่ง
 
-
-
-### Load library
+## 2. Load dataset
 ```{R}
+# Step 1: Load library
 library(dplyr)
 library(readr)
+
+# Step 2: Load dataset
+imdb <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/006-IMDB-data-from-2006-to-2016/main/IMDB-Movie-Data.csv"
 ```
-### Load dataset
-```{R}
-imdb <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/006-IMDB-data-from-2006-to-2016/main/IMDB-Movie-Data.csv")
-```
-### Explore the dataset
+
+## 3. Explore the dataset
 ```{R}
 View(imdb)
 glimpse(imdb)
@@ -63,12 +62,12 @@ $ Revenue..Millions. <dbl> 333.13, 126.46, 138.12, 270.32, 325.02, 45.13, 151.06
 $ Metascore          <int> 76, 65, 62, 59, 40, 42, 93, 71, 78, 41, 66, 74, 65, 81, 70, 61, 71, 58, 69, 81, 49, 96, 72, 56, 32~
 ```
 
-### Cleaning Dataset
+## 4. Cleaning Dataset
 ```{R}
 
 ```
 
-### Exploratory Data Analysis
+## 5. Exploratory Data Analysis
 
 1) หนังเรื่องไหนมีผลโหวตมากที่สุดและน้อยที่สุด
 ```{R}
