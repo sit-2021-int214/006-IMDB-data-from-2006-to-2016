@@ -15,6 +15,14 @@ This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. 
 - R Language
 - R Studio Desktop
 
+### Steps
+
+1. Define a question <br/>
+2. Load datasets <br/>
+3. Explore the dataset <br/>
+4. Cleaning Dataset <br/>
+5. Exploratory Data Analysis
+
 ## Table of Contents
 
 1. [Exploratory Data Analysis](./01_explore.md)
