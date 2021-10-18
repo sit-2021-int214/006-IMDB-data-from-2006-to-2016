@@ -2,7 +2,9 @@
 
 Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 
-Explore 2 dataset that given then finding descriptive statistics and summary result in form of sentences/paragraph at least 5 topics.
+## Overview
+
+กลุ่มของเราเลือกชุดข้อมูลนี้เพราะอยากรู้ว่าหนังที่ได้รับความนิยมใน IMDB ของช่วงปี 2006-2016 มีเรื่องอะไรบ้าง rating ของหนังแต่ละเรื่องเป็นยังไง ความยาวของหนังแต่ละเรื่องอยู่ที่เท่าไหร่ มีหนังประเภทอะไรบ้าง และนักแสดงกับผู้กำกับคือใคร
 
 ### Define a question
 
@@ -47,11 +49,19 @@ survey <- read.csv("https://github.com/sit-2021-int214/006-IMDB-data-from-2006-t
 
 ```
 
+## About Us
+
+งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 
 ### Team: ไอรดา
+
 
 |No.| Name                   | Student ID     |
 |:-:| ---------------------- | -------------- |
 | 1 | กัณฑ์พงษ์ ศรีสุธาภัทร์      | 63130500004    |
 | 2 | กิตติภูมิ อ่วมทอน          | 63130500006    |
 | 3 | ณัฏฐกรณ์ โชติภัทรจินดา    | 63130500029    |
+
+### Instructor
+- ATCHARA TRAN-U-RAIKUL
+- JATAWAT XIE (Git: [safesit23](https://github.com/safesit23))
