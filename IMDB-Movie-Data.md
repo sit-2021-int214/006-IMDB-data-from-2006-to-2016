@@ -64,7 +64,8 @@ $ Metascore          <int> 76, 65, 62, 59, 40, 42, 93, 71, 78, 41, 66, 74, 65, 8
 
 ## 4. Cleaning Dataset
 ```{R}
-
+imdb$Revenue..Millions. <- imdb$Revenue..Millions.%>%replace(is.na(imdb$Revenue..Millions.),"unidentified")
+imdb$Metascore <- imdb$Metascore%>%replace(is.na(imdb$Metascore),"on score")
 ```
 
 ## 5. Exploratory Data Analysis
