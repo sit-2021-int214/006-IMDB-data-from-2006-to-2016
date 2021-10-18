@@ -30,12 +30,12 @@ Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 
 
 
-### Loading library
+### Load library
 ```{R}
 library(dplyr)
 library(readr)
 ```
-### Loading dataset
+### Load dataset
 ```{R}
 imdb <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/006-IMDB-data-from-2006-to-2016/main/IMDB-Movie-Data.csv")
 ```
