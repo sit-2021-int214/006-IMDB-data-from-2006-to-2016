@@ -42,6 +42,24 @@ imdb <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/006-IMDB-dat
 
 # Step 3: explore the dataset
 View(imdb)
+glimpse(imdb)
+```
+In this dataset has
+```{R}
+Rows: 1,000
+Columns: 12
+$ Rank               <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25~
+$ Title              <chr> "Guardians of the Galaxy", "Prometheus", "Split", "Sing", "Suicide Squad", "The Great Wal~
+$ Genre              <chr> "Action,Adventure,Sci-Fi", "Adventure,Mystery,Sci-Fi", "Horror,Thriller", "Animation,Come~
+$ Description        <chr> "A group of intergalactic criminals are forced to work together to stop a fanatical warri~
+$ Director           <chr> "James Gunn", "Ridley Scott", "M. Night Shyamalan", "Christophe Lourdelet", "David Ayer",~
+$ Actors             <chr> "Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana", "Noomi Rapace, Logan Marshall-Gre~
+$ Year               <int> 2014, 2012, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016,~
+$ Runtime..Minutes.  <int> 121, 124, 117, 108, 123, 103, 128, 89, 141, 116, 133, 127, 133, 107, 109, 87, 139, 123, 1~
+$ Rating             <dbl> 8.1, 7.0, 7.3, 7.2, 6.2, 6.1, 8.3, 6.4, 7.1, 7.0, 7.5, 7.8, 7.9, 7.7, 6.4, 6.6, 8.2, 6.7,~
+$ Votes              <int> 757074, 485820, 157606, 60545, 393727, 56036, 258682, 2490, 7188, 192177, 232072, 93103, ~
+$ Revenue..Millions. <dbl> 333.13, 126.46, 138.12, 270.32, 325.02, 45.13, 151.06, NA, 8.01, 100.01, 234.02, 169.27, ~
+$ Metascore          <int> 76, 65, 62, 59, 40, 42, 93, 71, 78, 41, 66, 74, 65, 81, 70, 61, 71, 58, 69, 81, 49, 96, 7~
 ```
 
 1) หนังเรื่องไหนมีผลโหวตมากที่สุดและน้อยที่สุด
