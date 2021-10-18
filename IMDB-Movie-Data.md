@@ -109,7 +109,7 @@ Rating <- imdb %>%
   count()
 print(Rating)
 ```
-result: [59]
+result: `59`
 ```{R}
    n
 1 59
@@ -212,7 +212,7 @@ movie <- imdb %>%
 print(movie)
 ```
 
-result: [522]
+result: `522`
 ```{R}
     n
 1 522
