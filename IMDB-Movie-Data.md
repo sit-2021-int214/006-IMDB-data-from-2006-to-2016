@@ -17,8 +17,8 @@ Original Dataset from [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 1. Define a question <br/>
 2. Load datasets <br/>
 3. Explore the dataset <br/>
-4. Data Cleaning and Data Transformation <br/>
-5. Exploratory Data Analysis <br/>
+4. Cleaning Dataset <br/>
+5. Exploratory Data Analysis
 
 ### Define a question
 
@@ -63,7 +63,12 @@ $ Revenue..Millions. <dbl> 333.13, 126.46, 138.12, 270.32, 325.02, 45.13, 151.06
 $ Metascore          <int> 76, 65, 62, 59, 40, 42, 93, 71, 78, 41, 66, 74, 65, 81, 70, 61, 71, 58, 69, 81, 49, 96, 72, 56, 32~
 ```
 
-### Data Cleaning and Data Transformation
+### Cleaning Dataset
+```{R}
+
+```
+
+### Exploratory Data Analysis
 
 1) หนังเรื่องไหนมีผลโหวตมากที่สุดและน้อยที่สุด
 ```{R}
