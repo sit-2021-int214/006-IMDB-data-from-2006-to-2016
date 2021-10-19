@@ -65,10 +65,10 @@ $ Metascore          <int> 76, 65, 62, 59, 40, 42, 93, 71, 78, 41, 66, 74, 65, 8
 
 ## 4. Cleaning Dataset
 ```{R}
-# Change revenue from not applicable to unidentified
+# Change revenue from not applicable to 'unidentified'
 imdb$Revenue..Millions. <- imdb$Revenue..Millions. %>%
   replace(is.na(imdb$Revenue..Millions.),"unidentified")
-# Change metascore from not applicable to no score
+# Change metascore from not applicable to 'no score'
 imdb$Metascore <- imdb$Metascore %>%
   replace(is.na(imdb$Metascore),"no score")
 ```
