@@ -91,7 +91,8 @@ bar
 
 #pie
 
-ggplot(dataset, aes(x = '', fill = Segment,)) +
+pie <- ggplot(dataset, aes(x = '', fill = Segment,)) +
   geom_bar(width = 1) +
   coord_polar("y")
+pie
 
