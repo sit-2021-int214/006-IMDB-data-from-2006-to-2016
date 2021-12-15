@@ -26,7 +26,7 @@ This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. 
 ## Table of Contents
 
 1. [Exploratory Data Analysis](./IMDB-Movie-Data.md)
-2. [Data Visualization (PowerBI)](https://app.powerbi.com/view?r=eyJrIjoiOWVkM2I2NDAtMDlkZi00ZDM4LTkzNzYtOWNkYzhiMDEwNGM5IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D)
+2. [Data Visualization (PowerBI)](https://app.powerbi.com/view?r=eyJrIjoiOWVkM2I2NDAtMDlkZi00ZDM4LTkzNzYtOWNkYzhiMDEwNGM5IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection)
 3. [Analytical Inferential Statistics](./Hypothesis-Testing.md)
 
 ## Resources
