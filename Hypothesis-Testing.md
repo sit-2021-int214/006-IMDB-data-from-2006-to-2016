@@ -1,4 +1,5 @@
 ## Analytical Inferential Statistics
+จากข้อมูลหนังที่ได้รับความนิยม 1000 เรื่องใน IMDB ของช่วงปี 2006-2016
 
 ### Step to do:
 
