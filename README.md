@@ -25,8 +25,9 @@ This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. 
 
 ## Table of Contents
 
-1. [Exploratory Data Analysis](./01_explore.md)
+1. [Exploratory Data Analysis](./IMDB-Movie-Data.md)
 2. [Data Visualization]()
+3. [Analytical Inferential Statistics](./Hypothesis-Testing.md)
 
 ## Resources
 
