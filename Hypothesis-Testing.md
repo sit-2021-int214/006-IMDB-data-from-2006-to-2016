@@ -2,7 +2,6 @@
 
 ### Step to do:
 
-```
 0. Assign variables:
     - μ0 or p0
     - x̄ or P̅
@@ -21,7 +20,6 @@
     - talpha for T: talpha <- qt(p, df, lower.tail = TRUE)
 5.Compare P-value with alpha or z/t with zalpha/talpha
 6.Conclusion
-```
 
 ### Step 0: Assign variables
 
