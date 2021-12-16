@@ -9,7 +9,7 @@ Original Datasets from: [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. The data points included are: Title, Genre, Description, Director, Actors, Year, Runtime, Rating, Votes, Revenue, Metascrore
 
 ## Overview
-![image](/images/bar.png)
+
 กลุ่มของเราเลือกชุดข้อมูลนี้เพราะอยากรู้ว่าภาพยนตร์ที่ได้รับความนิยมใน IMDB ของช่วงปี 2006-2016 มีเรื่องอะไรบ้าง rating ของภาพยนตร์แต่ละเรื่องอยู่ที่เท่าไหร่ ภาพยนตร์แต่ละเรื่องมีผลโหวตมากน้อยเพียงใด ความยาวของภาพยนตร์แต่ละเรื่องอยู่ที่เท่าไหร่ มีภาพยนตร์ประเภทอะไรบ้าง รายได้ของภาพยนตร์แต่ละเรื่องอยู่ที่เท่าไหร่ ภาพยนตร์เรื่องนั้นฉายปีไหน ได้ metascore อยู่ที่ระดับไหน และนักแสดงกับผู้กำกับคือใคร
 
 ### Tools
@@ -26,13 +26,13 @@ This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. 
 5. Exploratory Data Analysis
 
 ## Table of Contents
-![image](/images/bar.png)
+
 1. [Exploratory Data Analysis](./IMDB-Movie-Data.md)
 2. [Data Visualization (PowerBI)](https://app.powerbi.com/view?r=eyJrIjoiMDIxOGY5MmUtY2Y2NC00N2YzLTk4OTktYWNhZjYxM2U5ZDc1IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D)
 3. [Analytical Inferential Statistics](./Hypothesis-Testing.md)
 
 ## Resources
-![image](/images/bar.png)
+
 ### Important Files in Repository
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
@@ -44,7 +44,7 @@ This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. 
 https://www.kaggle.com/PromptCloudHQ/imdb-data/version/1
 
 ## About Us
-![image](/images/bar.png)
+
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 
 ### Team: ไอรดา
@@ -60,5 +60,5 @@ https://www.kaggle.com/PromptCloudHQ/imdb-data/version/1
 - ATCHARA TRAN-U-RAIKUL
 - JATAWAT XIE (Git: [safesit23](https://github.com/safesit23))
 
-
+![image](/images/bar.png)
 
