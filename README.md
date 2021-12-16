@@ -60,5 +60,3 @@ https://www.kaggle.com/PromptCloudHQ/imdb-data/version/1
 - ATCHARA TRAN-U-RAIKUL
 - JATAWAT XIE (Git: [safesit23](https://github.com/safesit23))
 
-![image](/images/bar.png)
-
