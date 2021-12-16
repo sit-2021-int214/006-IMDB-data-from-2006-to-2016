@@ -16,6 +16,7 @@ This dataset is about's 1,000 most popular movies on IMDB in the last 10 years. 
 
 - R Language
 - R Studio Desktop
+- Microsoft Power BI
 
 ### Steps
 
