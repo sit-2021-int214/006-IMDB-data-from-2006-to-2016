@@ -1,5 +1,7 @@
 # 006-IMDB data from 2006 to 2016
 
+![image](./images/imdb.png)
+
 Original Datasets from: [IMDB-Movie-Data](./IMDB-Movie-Data.csv)
 
 ### About's Products Datasets
